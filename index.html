@@ -7,16 +7,21 @@
         <style> 
             .center1{ text-align:center;width:100%;}
         </style> 
-        <script>
-            οnlοad=function(){
+    <script>
+        var div = document.querySelector('div');
+        var time = 5;
+        change();
+        setInterval(change, 1000);
 
-                setTimeout(go, 3000);
-
-            };
-            function go(){
-                location.href="https://www.google.com";
+        function change() {
+            if (time == 0) {
+                location.href = 'https://www.google.com/';
+            } else {
+                div.innerHTML = '还有' + time + '秒跳转到最新官网';
+                time--;
             }
-        </script>
+        }
+    </script>
     </head>
 <body>
     <div class="center1">
