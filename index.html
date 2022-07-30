@@ -17,7 +17,7 @@
             if (time == 0) {
                 location.href = 'https://www.google.com/';
             } else {
-                div.innerHTML = '还有' + time + '秒跳转到最新官网';
+                document.getElementById('page_div').innerHTML = '还有' + time + '秒跳转到最新官网';
                 time--;
             }
         }
@@ -25,7 +25,7 @@
     </head>
 <body>
     <div class="center1">
-        <div></div>
+        <div id="page_div"></div>
     </div>
 </body>
 </html>
